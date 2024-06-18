@@ -1,3 +1,5 @@
-<div>
-    <!-- Be present above all else. - Naval Ravikant -->
-</div>
+<x-layout.layout title="リスト | Todoアプリ">
+    <x-layout.todolist-single>
+        {{-- ここに内容が入る --}}
+    </x-layout.todolist-single>
+</x-layout.layout>
