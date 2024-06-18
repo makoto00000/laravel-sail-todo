@@ -17,7 +17,10 @@ class TodolistFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => 1,
+            'content' => $this->faker->realText(30),
+            'deadline' => $this->faker->date(),
+            'status' => $this->faker->boolean(),
         ];
     }
 }
