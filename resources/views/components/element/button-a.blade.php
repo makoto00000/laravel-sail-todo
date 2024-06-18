@@ -6,7 +6,7 @@
     if (!function_exists('getThemeClassForButtonA')) {
         function getThemeClassForButtonA($theme) {
             return match ($theme) {
-              　'add' => 'py-2 px-4 text-white bg-blue-500 hover:bg-blue-600 focus:ring-blue-500',
+                'add' => 'py-2 px-4 text-white bg-blue-500 hover:bg-blue-600 focus:ring-blue-500',
                 'undo' => 'py-2 px-4 text-white bg-green-500 hover:bg-green-600 focus:ring-green-500',
                 'edit' => 'py-4 px-4 text-white bg-green-500 hover:bg-green-600 focus:ring-green-500',
                 default => '',
