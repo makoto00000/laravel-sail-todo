@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Todolist;
 
 use App\Http\Controllers\Controller;
+use App\Models\Todolist;
 use Illuminate\Http\Request;
 
 class TodolistController extends Controller
@@ -12,6 +13,7 @@ class TodolistController extends Controller
      */
     public function __invoke(Request $request)
     {
-        //
+        $todolists = Todolist::where([['status', '=', 0]])->get();
+        return view('todolist.todolist')->with(['todolists' => $todolists]);
     }
 }
